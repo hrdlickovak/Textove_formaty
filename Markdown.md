@@ -172,24 +172,18 @@ Moderní Markdown editory (jako Obsidian, Notion nebo GitHub) zvládají věci, 
 > | **Go (Golang)** | Střední | Cloud, Backend, Mikroslužby | Velmi rychlý | 🌐 Standard pro cloud |
 ---
 
-#### 📄 Před kompilací (Surový kód):
-```markdown
-Výpočet standardní odchylky se řídí tímto vzorcem:
-
-\[\sigma = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2}\]
-```
-
-#### 🎨 Po kompilaci (Vyrenderovaný výsledek na GitHubu):
-Výpočet standardní odchylky se řídí tímto vzorcem:
-
-$$
+#### 📄 Před kompilací (Surový kód pro GitHub):
+````markdown
+```math
 \sigma = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2}
-$$
----
+```
+````
 
+#### 🎨 Po kompilaci (Výsledek, jakmile soubor uložíte přes Commit changes):
 ```math
 \(\sigma = \sqrt\){\(\frac{1}{N} \sum_\){i=1}^{N} (x_i \(- \mu\))^2}
 ```
+
 
 ### 8. Vizuální schémata: Vývojové diagramy (Mermaid)
 * **Jak se to dělá:** Místo kreslení v grafických programech můžete diagram jednoduše naprogramovat textem. Celý zápis vložíte do bloku kódu, kterému jako jazyk nastavíte `mermaid`. Editor z textové logiky sám vygeneruje čistý vektorový graf. Zkratka `TD` (Top-Down) v kódu určuje, že graf se bude vykreslovat shora dolů.
