@@ -172,18 +172,20 @@ Moderní Markdown editory (jako Obsidian, Notion nebo GitHub) zvládají věci, 
 > | **Go (Golang)** | Střední | Cloud, Backend, Mikroslužby | Velmi rychlý | 🌐 Standard pro cloud |
 ---
 
-#### 📄 Před kompilací (Surový kód pro GitHub):
+### 7. Vědecký zápis: Matematické rovnice (LaTeX)
+* **Jak se to dělá:** Pokud potřebujete zapsat matematický nebo fyzikální vzorec, nejspolehlivější cestou pro GitHub je vložit ho do speciálního kódového bloku označeného slovem `math`. Všechny řecké symboly (jako lambda $\lambda$ nebo pí $\pi$) a mocniny se pak po uložení vykreslí v dokonalé grafické podobě.
+
+#### 📄 Před kompilací (Surový kód):
 ````markdown
 ```math
-\sigma = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2}
+G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu}
 ```
 ````
 
-#### 🎨 Po kompilaci (Výsledek, jakmile soubor uložíte přes Commit changes):
+#### 🎨 Po kompilaci (Vyrenderovaný výsledek):
 ```math
-\(\sigma = \sqrt\){\(\frac{1}{N} \sum_\){i=1}^{N} (x_i \(- \mu\))^2}
+G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu}
 ```
-
 
 ### 8. Vizuální schémata: Vývojové diagramy (Mermaid)
 * **Jak se to dělá:** Místo kreslení v grafických programech můžete diagram jednoduše naprogramovat textem. Celý zápis vložíte do bloku kódu, kterému jako jazyk nastavíte `mermaid`. Editor z textové logiky sám vygeneruje čistý vektorový graf. Zkratka `TD` (Top-Down) v kódu určuje, že graf se bude vykreslovat shora dolů.
@@ -200,10 +202,10 @@ graph TD
 ````
 
 #### 🎨 Po kompilaci (Vyrenderovaný výsledek v rámečku):
-> ```mermaid
-> graph TD
->     A[Spuštění programu] --> B{Jsou data v pořádku?}
->     B -- Ano --> C[Spustit analýzu]
->     B -- Ne --> D[Zobrazit chybu a ukončit]
->     C --> E[Uložit výsledek do PDF]
-> ```
+```mermaid
+graph TD
+    A[Spuštění programu] --> B{Jsou data v pořádku?}
+    B -- Ano --> C[Spustit analýzu]
+    B -- Ne --> D[Zobrazit chybu a ukončit]
+   C --> E[Uložit výsledek do PDF]
+```
