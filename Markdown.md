@@ -67,16 +67,28 @@ Když se ozvalo ono slavné ***Cvak!***, všem v místnosti spadl kámen ze srdc
 
 ---
 
-### 4. Propojení světů: Hypertextové odkazy
-* **Jak se to dělá:** Do hranatých závorek `[ ]` napíšete text, který má čtenář vidět, a do kulatých závorek `( )` bez jakékoliv mezery vložíte cílovou webovou adresu.
+---
 
-#### 📄 Před kompilací (Surový kód):
+### 4. Propojení světů: Odkazy a Obrázky
+Tato sekce vám umožní propojit váš dokument s okolním internetem nebo do něj vložit vizuální materiály. V Markdownu se odkazy a obrázky píší téměř stejně, u obrázku stačí přidat pouze vykřičník na začátek.
+
+* **4a) Hypertextové odkazy:** Do hranatých závorek `[ ]` napíšete text, který má čtenář vidět, a do kulatých závorek `( )` bez jakékoliv mezery vložíte cílovou webovou adresu (URL).
+* **4b) Multimédia (Obrázky):** Začnete vykřičníkem `!`, do hranatých závorek `[ ]` napíšete alternativní popisek (důležitý pro vyhledávače nebo nevidomé) a do kulatých závorek `( )` vložíte cestu k obrázku. Pokud máte obrázek uložený přímo na GitHubu ve složce `images`, cesta bude začínat názvem této složky.
+
+#### 📄 Před kompilací (Surový kód pro body 4a a 4b):
 ```markdown
-Navštivte [oficiální web Johna Gruber](https://daringfireball.net).
+Zde najdete [oficiální dokumentaci k Markdownu](https://github.com).
+
+Níže je přiložené schéma našeho projektu:
+![Architektura mého projektu](images/schema-projektu.png)
 ```
 
-#### 🎨 Po kompilaci (Vyrenderovaný výsledek):
-> Navštivte [oficiální web Johna Grubera](https://daringfireball.net).
+#### 🎨 Po kompilaci (Vyrenderovaný výsledek v rámečku):
+> Zde najdete [oficiální dokumentaci k Markdownu](https://github.com).
+> 
+> Níže je přiložené schéma našeho projektu:
+> ![Architektura mého projektu](images/schema-projektu.png)
+
 
 ---
 
