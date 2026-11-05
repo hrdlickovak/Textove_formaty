@@ -201,7 +201,7 @@ graph TD
 ```
 ````
 
-#### 🎨 Po kompilaci (Vyrenderovaný výsledek v rámečku):
+#### 🎨 Po kompilaci (Vyrenderovaný výsledek):
 ```mermaid
 graph TD
     A[Spuštění programu] --> B{Jsou data v pořádku?}
