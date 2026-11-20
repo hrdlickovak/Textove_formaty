@@ -1,0 +1,61 @@
+\documentclass[a4paper,12pt]{article}
+
+% --- Kódování, čeština a základní typografie ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{lmodern}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{microtype}
+
+% --- Odkazy, tabulky a obrázky ---
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue,
+  citecolor=black
+}
+
+% --- Údaje o dokumentu (lze upravit podle zadání) ---
+\newcommand{\nazevPrace}{Název studentské práce}
+\newcommand{\autorPrace}{Jméno a příjmení}
+\newcommand{\predmetPrace}{Informatika}
+
+\title{\textbf{\nazevPrace}}
+\author{\autorPrace \\ \small Předmět: \predmetPrace}
+\date{\today}
+
+\begin{document}
+
+% --- 1. Úvodní strana ---
+\begin{titlepage}
+  \centering
+  \vspace*{2cm}
+  {\Large \predmetPrace \par}
+  \vspace{2.5cm}
+  {\Huge \bfseries \nazevPrace \par}
+  \vspace{1.5cm}
+  {\Large \autorPrace \par}
+  \vfill
+  {\large \today \par}
+\end{titlepage}
+
+% --- 2. Obsah ---
+\tableofcontents
+\newpage
+
+% --- 3. Hlavní text (samostatný soubor text.tex) ---
+\input{text}
+
+% --- 4. Zdroje na konci dokumentu (samostatný soubor zdroje.tex) ---
+\newpage
+\section*{Seznam použitých zdrojů}
+\addcontentsline{toc}{section}{Seznam použitých zdrojů}
+\input{zdroje}
+
+\end{document}
